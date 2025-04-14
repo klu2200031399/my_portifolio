@@ -1,70 +1,69 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ExternalLink, Award, GraduationCap, Briefcase, Code, User } from 'lucide-react';
 
 function App() {
   const certifications = [
     {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      credlyLink: "https://www.credly.com/org/amazon-web-services"
+      title: "Red Hat Certified Enterprise Application Developer",
+      issuer: "Red Hat",
+      credlyLink: "https://www.credly.com/badges/182169e2-9dc5-473f-aa5f-a228076ba5a1/public_url"
     },
     {
-      title: "Google Cloud Digital Leader",
-      issuer: "Google Cloud",
-      credlyLink: "https://www.credly.com/org/google"
+      title: "Multicloud Network Associate",
+      issuer: "Aviatrix",
+      credlyLink: "https://www.credly.com/badges/922a6be4-bd8e-46a7-b802-72e09335a2df/public_url"
     },
     {
       title: "Microsoft Azure Fundamentals",
       issuer: "Microsoft",
-      credlyLink: "https://www.credly.com/org/microsoft"
+      credlyLink: "https://drive.google.com/file/d/1JKlIVuwq9PsrxjMdhUe9uMqkjg69D1oo/view?usp=sharing"
     }
   ];
 
   const projects = [
     {
-      title: "Smart Home Automation",
-      description: "IoT-based home automation system using Raspberry Pi and React",
-      tech: ["React", "Node.js", "Python", "IoT"],
+      title: "Student Feedback Management System",
+      description: "A comprehensive MERN stack application for managing student feedback, featuring real-time analytics and automated response handling",
+      tech: ["MongoDB", "Express.js", "React", "Node.js", "Redux"],
       github: "https://github.com",
-      image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=500&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&h=300&fit=crop"
     },
     {
-      title: "AI Image Recognition",
-      description: "Deep learning model for image classification using TensorFlow",
-      tech: ["Python", "TensorFlow", "OpenCV"],
+      title: "Online Health Consultant",
+      description: "Django-based telemedicine platform with video consultations, appointment scheduling, and electronic health records",
+      tech: ["Django", "Python", "PostgreSQL", "WebRTC"],
       github: "https://github.com",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop"
     },
     {
-      title: "Blockchain Voting System",
-      description: "Decentralized voting system using Ethereum smart contracts",
-      tech: ["Solidity", "Web3.js", "React"],
+      title: "Online Scholarship Management",
+      description: "Java Spring Boot application for managing scholarship applications, processing, and disbursement tracking",
+      tech: ["Java", "Spring Boot", "MySQL", "Thymeleaf"],
       github: "https://github.com",
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&h=300&fit=crop"
     }
   ];
 
   const skills = [
     {
-      category: "Frontend",
-      items: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
-      icon: "🎨"
+      category: "Languages",
+      items: ["Python", "JavaScript", "Java", "C++"],
+      icon: "💻"
     },
     {
-      category: "Backend",
-      items: ["Node.js", "Python", "Express", "FastAPI"],
-      icon: "⚙️"
+      category: "Web Technologies",
+      items: ["React", "Django", "Spring Boot", "Node.js"],
+      icon: "🌐"
     },
     {
-      category: "Cloud & DevOps",
-      items: ["AWS", "Docker", "Git", "CI/CD"],
-      icon: "☁️"
+      category: "Databases",
+      items: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
+      icon: "🗄️"
     },
     {
-      category: "Data & AI",
-      items: ["TensorFlow", "PyTorch", "SQL", "pandas"],
-      icon: "🤖"
+      category: "Tools & Cloud",
+      items: ["Git", "Docker", "AWS", "Azure"],
+      icon: "🛠️"
     }
   ];
 
@@ -142,38 +141,37 @@ function App() {
                 <User className="w-8 h-8" /> K.YOGEENDRA
               </motion.h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                I'm a passionate Computer Science student with a keen interest in artificial intelligence, 
-                cloud computing, and full-stack development. My goal is to leverage technology to create 
-                innovative solutions that make a positive impact on society.
+              A dedicated student with a strong passion for AI tools and web technologies, specializing in Software Modeling and DevOps. He thrives on building efficient systems and continuously explores innovative solutions to modern problems. With a deep commitment to his craft, he combines creativity with technical expertise to bring impactful projects to life. His enthusiasm for learning and evolving in the tech world drives his pursuit of excellence in every endeavor.
               </p>
-              <motion.div 
-                className="flex gap-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                <motion.a 
-                  href="https://github.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
-                  whileHover={{ scale: 1.1, rotate: 360 }}
-                  whileTap={{ scale: 0.9 }}
+              <div className="flex flex-col gap-6">
+                <motion.div 
+                  className="flex gap-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
                 >
-                  <Github className="w-6 h-6" />
-                </motion.a>
-                <motion.a 
-                  href="https://linkedin.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
-                  whileHover={{ scale: 1.1, rotate: 360 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <Linkedin className="w-6 h-6" />
-                </motion.a>
-                <motion.a 
-                  href="mailto:contact@example.com"
+                  <motion.a 
+                    href="https://github.com/klu2200031399" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
+                    whileHover={{ scale: 1.1, rotate: 360 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Github className="w-6 h-6" />
+                  </motion.a>
+                  <motion.a 
+                    href="https://www.linkedin.com/in/yogeendra-kajjam-501388253/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
+                    whileHover={{ scale: 1.1, rotate: 360 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Linkedin className="w-6 h-6" />
+                  </motion.a>
+                  <motion.a 
+                  href="mailto:yogeendra7675@gmail.com"
                   className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
                   whileHover={{ scale: 1.1, rotate: 360 }}
                   whileTap={{ scale: 0.9 }}
@@ -190,7 +188,9 @@ function App() {
                 >
                   <ExternalLink className="w-6 h-6" />
                 </motion.a>
-              </motion.div>
+                </motion.div>
+               
+              </div>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, x: 100 }}
@@ -199,11 +199,13 @@ function App() {
               className="flex-1 relative"
               whileHover={{ scale: 1.05 }}
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-lg opacity-20 animate-pulse" />
+              {/* <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full blur-lg opacity-10 animate-pulse" /> */}
+              <div className="absolute -inset-1 bg-black rounded-xl blur-md opacity-20 pointer-events-none" />
+
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop" 
+                src="/varma.jpg" 
                 alt="Profile" 
-                className="rounded-full w-64 h-64 mx-auto object-cover shadow-xl relative"
+                className="rounded-full w-64 h-64 mx-auto object-cover shadow-[0_0_50px_rgba(59,130,246,0.3)] hover:shadow-[0_0_70px_rgba(59,130,246,0.5)] transition-shadow duration-300"
               />
             </motion.div>
           </div>
@@ -230,19 +232,12 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ 
-                  scale: 1.05,
-                  boxShadow: "0 0 20px rgba(59, 130, 246, 0.5)"
-                }}
-                className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 transform hover:bg-gray-800 transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 transform hover:bg-gray-800 transition-all duration-300 shadow-[0_0_30px_rgba(59,130,246,0.1)] hover:shadow-[0_0_40px_rgba(59,130,246,0.2)]"
               >
-                <motion.div 
-                  className="text-4xl mb-4"
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
+                <div className="text-4xl mb-4">
                   {skillGroup.icon}
-                </motion.div>
+                </div>
                 <h3 className="text-xl font-bold mb-4">{skillGroup.category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {skillGroup.items.map((skill) => (
@@ -280,13 +275,13 @@ function App() {
                   scale: 1.05,
                   boxShadow: "0 0 30px rgba(59, 130, 246, 0.3)"
                 }}
-                className="group bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden"
+                className="group bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.1)]"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] group-hover:shadow-[inset_0_0_50px_rgba(0,0,0,0.7)]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60" />
                 </div>
@@ -334,16 +329,43 @@ function App() {
           >
             <GraduationCap className="w-8 h-8" /> Education
           </motion.h2>
-          <motion.div 
-            className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl"
-            whileHover={{ 
-              scale: 1.02,
-              boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
-            }}
-          >
-            <h3 className="text-2xl font-bold">Bachelor of Computer Science</h3>
-            <p className="text-gray-300">Expected Graduation: 2025</p>
-          </motion.div>
+          <div className="space-y-6">
+            <motion.div 
+              className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-[0_0_30px_rgba(59,130,246,0.1)]"
+              whileHover={{ 
+                scale: 1.02,
+                boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
+              }}
+            >
+              <h3 className="text-2xl font-bold text-blue-400">KL University</h3>
+              <p className="text-xl text-gray-300 mt-2">Bachelor of Computer Science and Engineering</p>
+              <p className="text-gray-400 mt-1">2022 - 2026</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-[0_0_30px_rgba(59,130,246,0.1)]"
+              whileHover={{ 
+                scale: 1.02,
+                boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
+              }}
+            >
+              <h3 className="text-2xl font-bold text-blue-400">Krishnaveni Junior College</h3>
+              <p className="text-xl text-gray-300 mt-2">Intermediate Education</p>
+              <p className="text-gray-400 mt-1">2020 - 2022</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-[0_0_30px_rgba(59,130,246,0.1)]"
+              whileHover={{ 
+                scale: 1.02,
+                boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
+              }}
+            >
+              <h3 className="text-2xl font-bold text-blue-400">Jai Bharat High School</h3>
+              <p className="text-xl text-gray-300 mt-2">Secondary Education</p>
+              <p className="text-gray-400 mt-1">Completed in 2020</p>
+            </motion.div>
+          </div>
         </motion.section>
 
         {/* Certifications Section */}
@@ -368,7 +390,7 @@ function App() {
                   scale: 1.05,
                   boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
                 }}
-                className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-800 transition-colors"
+                className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-800 transition-colors shadow-[0_0_30px_rgba(59,130,246,0.1)]"
               >
                 <h3 className="text-xl font-bold mb-2">{cert.title}</h3>
                 <p className="text-gray-300 mb-4">{cert.issuer}</p>
@@ -382,6 +404,13 @@ function App() {
             ))}
           </div>
         </section>
+
+        {/* Footer with Copyright */}
+        <footer className="container mx-auto px-4 py-8 text-center border-t border-gray-800">
+          <p className="text-gray-400">
+            © {new Date().getFullYear()} K.YOGEENDRA. All rights reserved.
+          </p>
+        </footer>
       </div>
     </div>
   );
