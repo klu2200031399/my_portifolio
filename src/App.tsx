@@ -141,7 +141,7 @@ function App() {
                 <User className="w-8 h-8" /> K.YOGEENDRA
               </motion.h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              A dedicated student with a strong passion for AI tools and web technologies, specializing in Software Modeling and DevOps. He thrives on building efficient systems and continuously explores innovative solutions to modern problems. With a deep commitment to his craft, he combines creativity with technical expertise to bring impactful projects to life. His enthusiasm for learning and evolving in the tech world drives his pursuit of excellence in every endeavor.
+                A driven and dynamic Computer Science graduate with a strong penchant for innovation and a flair for fast learning. Equipped with exceptional time management and the ability to adapt swiftly, I thrive in deadline-bound environments. I bring to the table a curious mind, a meticulous work ethic, and a passion for leveraging technology to solve real-world problems.
               </p>
               <div className="flex flex-col gap-6">
                 <motion.div 
@@ -179,7 +179,7 @@ function App() {
                   <Mail className="w-6 h-6" />
                 </motion.a>
                 <motion.a 
-                  href="/resume.pdf"
+                  href="https://yogeendra-resume.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
